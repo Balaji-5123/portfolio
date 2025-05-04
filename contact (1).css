@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #1c1c1c;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 30px;
+    font-size: 700;
+}
+
+.navbar ul {
+    display: flex;
+
+
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #7cf03d;
+
+}
+.contact-us-title{
+    margin-top: 90px;
+    font-size: xx-large;
+    font: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #7cf03d;
+}
+.maindiv{
+    margin-top: 20px;
+    width: 100%;
+    
+}
+.maindiv .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: -200px;
+    width: 100%;
+    height: 100%;
+}
+.maindiv .box .leftbox{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    color: aliceblue;
+    margin-right: -400px;
+
+}
+.maindiv .box .leftbox h3{
+    color:white;
+    font-family: cursive;
+
+    font-size: 40px;
+}
+.maindiv .box .leftbox h4{
+    color: aliceblue;
+    font-size: 24px;
+    font-family: cursive;
+}
+/* Increase the width and height for input fields and text area */
+.maindiv .box .leftbox input,
+.maindiv .box .leftbox textarea {
+    width: 50%;
+    /* Make the input fields take the full width of the container */
+    height: 50px;
+    /* Set a larger height for input fields */
+    padding: 15px;
+    /* Add more padding for a spacious input area */
+    font-size: 18px;
+    /* Increase the font size for better readability */
+    margin-bottom: 20px;
+    /* Add spacing between each input field */
+    border-radius: 8px;
+    /* Optional: Rounded corners for a modern look */
+    border: 1px solid #ccc;
+    /* Add a border */
+    background-color: #333;
+    /* Darker background to match the theme */
+    color: white;
+    /* White text to contrast against the background */
+}
+
+.maindiv .box .leftbox textarea {
+    height: 120px;
+    /* Increase height for the text area specifically */
+}
+.maindiv .box .leftbox form{
+    display: flex;
+    flex-direction: column;
+}
+.maindiv .box .leftbox button {
+    max-width: 160px;
+    padding: 15px 30px;
+    
+    font-size: 20px;
+    
+    background-color: #7cf03d;
+    
+    color: #1c1c1c;
+    
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.maindiv .box .leftbox button:hover {
+    background-color: #c4d5b6;
+    
+}
+
+.maindiv .box .rightbox{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 700px;
+    height: auto;   
+    color: aliceblue;
+    background-color: #1c1c1c;
+    
+
+}
+.maindiv .box .textdiv{
+    margin-top: 10px;
+
+    
+}
+.maindiv .box .textdiv p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+.maindiv .box .rightbox .iconsdiv{
+    display: flex;
+    flex-direction:column;
+    
+    margin-top: 100px;
+    
+    
+    
+}
+.maindiv .box .rightbox .iconsdiv .line1{
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    margin-bottom: 100px;
+}
+.maindiv .box .rightbox .iconsdiv .line2 {
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+}
+.maindiv .box .rightbox .iconsdiv a{
+    
+    padding: 8px;
+        /*border: 2px solid #7d847a;*/
+        font-size: 40px;
+        border-radius: 50%;
+        margin: 0 8px;
+        transition: .5s;
+        color: #7cf03d;
+       
+}
+.maindiv .box .rightbox .iconsdiv .line1text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    margin-top: -80px;
+    margin-right: -90px;
+    
+}
+.maindiv .box .rightbox .iconsdiv .line1text div h3{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 300;
+    color: #d4dece;
+}
+
+.maindiv .box .rightbox .iconsdiv .line2text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 220px;
+    
+
+}
+
+.maindiv .box .rightbox .iconsdiv .line2text div h3 {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 300;
+    color: #d4dece;
+}
+
+

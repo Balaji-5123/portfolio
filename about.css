@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reset styles and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1c1c1c;
+    /* Set background color for body */
+}
+
+/* Link styles */
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    /* Smooth transition for color changes */
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    background: #1c1c1c;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 0.1s;
+}
+
+/* Navbar animation */
+@keyframes show-content {
+    to {
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 30px;
+    /* Removed duplicate font-size property */
+}
+
+/* Navbar list styles */
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #7cf03d;
+    /* Highlight color for hover and active links */
+}
+
+/* Main div styles */
+.maindiv {
+    display: flex;
+    align-items: center;
+    padding: 60px 30px;
+    margin-top: 70px;
+    /* Space for fixed navbar */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Shadow effect */
+    gap: 100px;
+    /* Space between image and content */
+}
+
+.maindiv img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /* Circular image */
+}
+
+.maindiv .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Set width for consistency */
+}
+
+.maindiv .content .box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 500px;
+    /* Keep height defined */
+}
+
+.maindiv .content h1 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.maindiv .content p {
+    margin: 5px 0 40px;
+    /* Simplified margin property */
+    font-size:22px;
+    color: rgb(232, 197, 197);
+}
+
+.maindiv .content #h {
+    color: red;
+    margin-bottom: 10px;
+}
+.maindiv .content .box h2{
+    font-weight:500;
+    
+    color: white;
+}
+.maindiv .content .box  h2{
+    margin-bottom: 10px;
+
+}
+.maindiv .content .box h1 {
+    color: #7cf03d;
+    margin-bottom: 10px;
+
+}
+.navbar ul li a:hover {
+    color: #7cf03d;
+    /* Existing hover color */
+    text-shadow: 0 0 5px rgba(124, 240, 61, 0.7);
+    /* Subtle glow effect */
+}

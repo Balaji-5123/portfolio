@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #1c1c1c;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 30px;
+    font-size: 700;
+}
+
+.navbar ul {
+    display: flex;
+
+
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #7cf03d;
+
+}
+.maindiv {
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 50px;
+    color: #7cf03d;
+}
+
+.maindiv #title1{
+    color: aliceblue;
+    margin-left: 20px;
+}
+.education {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 100px;
+}
+.tenth {
+    
+    background-color: rgb(45, 46, 45);
+    /* White background for .tenth */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(79, 207, 20, 0.3);
+    width: 30%;
+}
+
+.twelth {
+    
+    background-color: rgb(45, 46, 45);
+    /* Green background for .twelth */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(17, 197, 10, 0.3);
+    width: 30%;
+    color: white;
+    /* Text color adjusted for visibility */
+}
+
+.btech {
+    background-color: rgb(45, 46, 45);
+    /* Orange background for .btech */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(51, 168, 12, 0.3);
+    width: 30%;
+    color: white;
+    /* Text color adjusted for visibility */
+}
+.education h1{
+    background-color: rgb(45, 46, 45);
+    text-align: center;
+    color: #7cf03d;
+}
+#content{
+    background-color: rgb(45, 46, 45);
+    font-size: 24px;
+}
+#grade{
+    background-color: rgb(45, 46, 45);
+        font-size: 24px;
+    font-family: cursive;
+    color: red;
+
+}
